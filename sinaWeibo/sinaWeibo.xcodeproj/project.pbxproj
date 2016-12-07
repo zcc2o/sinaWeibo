@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		163D0E461DF7B8650062167A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163D0E451DF7B8650062167A /* Images.xcassets */; };
+		163D0E491DF7D75D0062167A /* ZCCTabbarContrller.m in Sources */ = {isa = PBXBuildFile; fileRef = 163D0E481DF7D75D0062167A /* ZCCTabbarContrller.m */; };
 		164C6E2C1DF6B51A00EF8281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 164C6E2B1DF6B51A00EF8281 /* main.m */; };
 		164C6E2F1DF6B51A00EF8281 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 164C6E2E1DF6B51A00EF8281 /* AppDelegate.m */; };
 		164C6E381DF6B51A00EF8281 /* sinaWeibo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 164C6E361DF6B51A00EF8281 /* sinaWeibo.xcdatamodeld */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		163D0E441DF7B5C50062167A /* ZCCRandomColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCRandomColor.h; sourceTree = "<group>"; };
 		163D0E451DF7B8650062167A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		163D0E471DF7D75D0062167A /* ZCCTabbarContrller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCTabbarContrller.h; sourceTree = "<group>"; };
+		163D0E481DF7D75D0062167A /* ZCCTabbarContrller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCTabbarContrller.m; sourceTree = "<group>"; };
 		164C6E271DF6B51A00EF8281 /* sinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164C6E2B1DF6B51A00EF8281 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		164C6E2D1DF6B51A00EF8281 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 			children = (
 				164C6E2D1DF6B51A00EF8281 /* AppDelegate.h */,
 				164C6E2E1DF6B51A00EF8281 /* AppDelegate.m */,
+				163D0E471DF7D75D0062167A /* ZCCTabbarContrller.h */,
+				163D0E481DF7D75D0062167A /* ZCCTabbarContrller.m */,
 				163D0E441DF7B5C50062167A /* ZCCRandomColor.h */,
 				164C6E3E1DF6B51A00EF8281 /* Info.plist */,
 				164C6E361DF6B51A00EF8281 /* sinaWeibo.xcdatamodeld */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163D0E491DF7D75D0062167A /* ZCCTabbarContrller.m in Sources */,
 				164C6E2F1DF6B51A00EF8281 /* AppDelegate.m in Sources */,
 				164C6E2C1DF6B51A00EF8281 /* main.m in Sources */,
 				164C6E381DF6B51A00EF8281 /* sinaWeibo.xcdatamodeld in Sources */,

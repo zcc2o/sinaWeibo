@@ -10,6 +10,8 @@
 
 #import "ZCCRandomColor.h"
 
+#import "ZCCTabbarContrller.h"
+
 @interface AppDelegate ()
 
 @end
@@ -24,96 +26,95 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UITabBarController *tabbarVC = [[UITabBarController alloc] init];
+    ZCCTabbarContrller *tabbarVC = [[ZCCTabbarContrller alloc] init];
     
-    
-    
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    
-    vc1.view.frame = self.window.bounds;
-    
-    vc1.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
-    //设置tabbar
-    
-    vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
-    
-    UIImage *selectedImage1 = [UIImage imageNamed:@"tabbar_home_selected"];
-    //设置按下图片非自动填充
-    UIImage *noRenderImage1 = [selectedImage1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    vc1.tabBarItem.selectedImage = noRenderImage1;
-    
-    vc1.tabBarItem.title = @"首页";
-    
-    //设置按下字体非自动填充
-    NSDictionary *titleAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:241*1.0/255 green:109*1.0/255 blue:10*1.0/255 alpha:1.0]};
-    
-    [vc1.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
-    
-    [tabbarVC addChildViewController:vc1];
-
-    
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    
-    vc2.view.frame = self.window.bounds;
-    
-    vc2.view.backgroundColor = ZCCRCOLOR;
-    
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
-    
-    UIImage *selectedImage2 = [UIImage imageNamed:@"tabbar_message_center_selected"];
-    
-    UIImage *noRenderImage2 = [selectedImage2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    vc2.tabBarItem.selectedImage = noRenderImage2;
-    
-    vc2.tabBarItem.title = @"消息";
-    
-    [vc2.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
-    
-    [tabbarVC addChildViewController:vc2];
-    
-    
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    
-    vc3.view.frame = self.window.bounds;
-    
-    vc3.view.backgroundColor = ZCCRCOLOR;
-    
-    vc3.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
-    
-    UIImage *selectedImage3 = [UIImage imageNamed:@"tabbar_discover_selected"];
-    
-    UIImage *noRenderImage3 = [selectedImage3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    vc3.tabBarItem.selectedImage = noRenderImage3;
-    
-    vc3.tabBarItem.title = @"发现";
-    
-    [vc3.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
-    
-    [tabbarVC addChildViewController:vc3];
-    
-    
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    
-    vc4.view.frame = self.window.bounds;
-    
-    vc4.view.backgroundColor = ZCCRCOLOR;
-    
-    vc4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
-    
-    UIImage *selectedImage4 = [UIImage imageNamed:@"tabbar_profile_selected"];
-    
-    UIImage *noRenderImage4 = [selectedImage4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    vc4.tabBarItem.selectedImage = noRenderImage4;
-    
-    vc4.tabBarItem.title = @"我";
-    
-    [vc4.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
-    
-    [tabbarVC addChildViewController:vc4];
+//
+//    UIViewController *vc1 = [[UIViewController alloc] init];
+//    
+//    vc1.view.frame = self.window.bounds;
+//    
+//    vc1.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+//    //设置tabbar
+//    
+//    vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
+//    
+//    UIImage *selectedImage1 = [UIImage imageNamed:@"tabbar_home_selected"];
+//    //设置按下图片非自动填充
+//    UIImage *noRenderImage1 = [selectedImage1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+//    vc1.tabBarItem.selectedImage = noRenderImage1;
+//    
+//    vc1.tabBarItem.title = @"首页";
+//    
+//    //设置按下字体非自动填充
+//    NSDictionary *titleAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:241*1.0/255 green:109*1.0/255 blue:10*1.0/255 alpha:1.0]};
+//    
+//    [vc1.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
+//    
+//    [tabbarVC addChildViewController:vc1];
+//
+//    
+//    UIViewController *vc2 = [[UIViewController alloc] init];
+//    
+//    vc2.view.frame = self.window.bounds;
+//    
+//    vc2.view.backgroundColor = ZCCRCOLOR;
+//    
+//    vc2.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
+//    
+//    UIImage *selectedImage2 = [UIImage imageNamed:@"tabbar_message_center_selected"];
+//    
+//    UIImage *noRenderImage2 = [selectedImage2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+//    vc2.tabBarItem.selectedImage = noRenderImage2;
+//    
+//    vc2.tabBarItem.title = @"消息";
+//    
+//    [vc2.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
+//    
+//    [tabbarVC addChildViewController:vc2];
+//    
+//    
+//    UIViewController *vc3 = [[UIViewController alloc] init];
+//    
+//    vc3.view.frame = self.window.bounds;
+//    
+//    vc3.view.backgroundColor = ZCCRCOLOR;
+//    
+//    vc3.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
+//    
+//    UIImage *selectedImage3 = [UIImage imageNamed:@"tabbar_discover_selected"];
+//    
+//    UIImage *noRenderImage3 = [selectedImage3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+//    vc3.tabBarItem.selectedImage = noRenderImage3;
+//    
+//    vc3.tabBarItem.title = @"发现";
+//    
+//    [vc3.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
+//    
+//    [tabbarVC addChildViewController:vc3];
+//    
+//    
+//    UIViewController *vc4 = [[UIViewController alloc] init];
+//    
+//    vc4.view.frame = self.window.bounds;
+//    
+//    vc4.view.backgroundColor = ZCCRCOLOR;
+//    
+//    vc4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
+//    
+//    UIImage *selectedImage4 = [UIImage imageNamed:@"tabbar_profile_selected"];
+//    
+//    UIImage *noRenderImage4 = [selectedImage4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+//    vc4.tabBarItem.selectedImage = noRenderImage4;
+//    
+//    vc4.tabBarItem.title = @"我";
+//    
+//    [vc4.tabBarItem setTitleTextAttributes:titleAttributes forState:UIControlStateSelected];
+//    
+//    [tabbarVC addChildViewController:vc4];
 
     
     self.window.rootViewController = tabbarVC;
